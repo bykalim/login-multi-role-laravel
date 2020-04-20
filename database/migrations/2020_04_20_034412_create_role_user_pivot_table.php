@@ -13,7 +13,7 @@ class CreateRoleUserPivotTable extends Migration
      */
     public function up()
     {
-        Schema::create('role_user_pivot', function (Blueprint $table) {
+        Schema::create('role_user', function (Blueprint $table) {
             $table->id();
             $table->integer('user_id');
             $table->integer('role_id');

@@ -76,13 +76,13 @@
                                     @foreach(App\Role::all() as $role)
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input text-md-right" type="checkbox" name="role[]"
-                                                   value="{{$role->name}}">
+                                                   value="{{$role->id}}">
                                             <label class="form-check-label" for="role">{{$role->name}}</label>
                                         </div>
                                     @endforeach
                                 </div>
                                 @error('role')
-                                <span class="invalid-feedback" role="alert">
+                                <span class="col-md-7 invalid-feedback text-md-right" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                                 @enderror
